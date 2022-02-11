@@ -1,0 +1,62 @@
+
+.login{
+    width: 400px;
+    border: solid 1px #555;
+    box-shadow: 0px 0px 2px 0px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.login_name-form{
+    margin: 0 0 40px 0;
+    color: #7f7f7f;
+    text-align: center;
+}
+
+.recover_pwd-link{
+    margin-bottom: 20px;
+}
+
+.recover_pwd-link a{
+    margin-left: 228px;
+    text-decoration: none;
+}
+
+.login_btn{
+   width: 100%;
+   border-radius: 20px;
+   margin-top: 0;
+   background-color: rgba(108, 99, 255, 1);
+   color: #fff;
+}
+
+.login_btn:hover{
+    background-color: rgba(108, 99, 255, 0.9);
+    box-shadow: 0px 0px 1px 0px;
+    color: #fff;
+}
+
+.login_sign-up{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* css cho phần thông báo */
+.ttk_thongbao,
+.mk_thongbao{
+    color: red;
+    display: none;
+}
+
+.thongbao{
+    text-align: center;
+    color: red;
+}
+
+.form_border-red{
+    border-color: red;
+}

@@ -1,0 +1,422 @@
+
+.navbar {
+    margin-bottom: 1px;
+    border-radius: 0;
+}
+
+/* css cho thanh navbar dưới */
+.navLogo_bot{
+    margin-bottom: 1px;
+}
+
+/* css cho phần header website */
+.header_main-nav{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.header_main{
+    background-image: url("../img/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg");
+    margin: 0;
+    height: 400px;
+    background-size: 100%;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.header_main div{
+    margin: auto;
+    color: #fff;
+}
+
+.header_main div h1{
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 600;
+    font-size: 10rem;
+    opacity: 0.6;
+}
+
+  
+  /* Remove the jumbotron's default bottom margin */ 
+.jumbotron {
+    margin-bottom: 0;
+}
+ 
+  /* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+ 
+
+.jumbotron{
+    padding-top: 0;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #d9534f;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #d9534f;
+  border-radius: 3px;
+  border: solid 1px white;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: rgb(191 59 59);
+    background-color: transparent;
+    border: solid 1px #d9534f;
+    border-radius: 3px;
+}
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+    color: rgb(191 59 59);
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #d9534f;
+}
+.navbar-inverse-color{
+    border-color: #fff;
+}
+
+.container-fluid-color{
+    background-color: #fff;
+}
+
+.navbar-nav-color{
+    color: #d9534f;
+}
+
+.navbar-inverse .navbar-brand{
+    color: #d9534f;
+}
+
+.panel-content{
+    display: flex;
+}
+
+/* css cho ô tìm kiếm */
+.navbar-left__search{
+    display: flex;
+}
+
+
+/* modal */
+.modal__body{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    display: none;
+}
+.modal__inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* css cho nut bam */
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-toggle:focus{
+    background-color: #d9534f;
+}
+
+.css_echo{
+    margin:0 auto;
+    background-color: #555;
+}
+
+.Focus:focus{
+    background-color: #d9534f;
+    color: #fff;
+}
+
+
+
+
+
+/*css cho Input*/
+.input{
+    width: 100%;
+    border-radius: 2px;
+    height: 36px;
+    border: solid 1px #333;
+}
+/* css cho phần thân trang web */
+.noidungweb{
+    background-color: rgb(248, 248, 248);
+}
+
+.noidungweb_slide1{
+    background-color: #fff;
+}
+.noidungweb_food{
+    background-color: #fff;
+}
+.noidungweb_title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+    box-shadow: -2px 1px 3px 0px;
+}
+
+.noidungweb_title--blue{
+    color: #1b74e4;
+}
+
+.noidungweb_title--red{
+    color: red;
+}
+
+.noidungweb_title--tim{
+    color: rgb(255, 0, 200);
+}
+.noidungweb_xemthem{
+    text-align: right;
+    font-size: 16px;
+}
+.cangiua{/* căn giữa cho thẻ img */
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+.noidungweb_food-link:hover{
+    text-decoration: none;
+}
+.noidungweb_food-btn{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 5px;
+    background-color: #fff;
+    border: solid 1px red;
+    border-radius: 50%;
+    color: red;
+    font-size: 16px;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    height: 400px;
+}
+
+.tintuc_nd{ /*css cho phần tin tức */
+    display: flex;
+    height: 100px;
+}
+
+.tintuc_nd-img{ /*css cho phần tin tức */
+    height: 80px;
+}
+.tintuc_nd .panel-body, .infomation{
+    display: flex;
+    align-items: center;
+}
+
+/* css cho phần thực đơn */
+.thucdon{
+    height: 820px;
+    left: 0;
+    position:relative;
+    margin-top: 20px;
+}
+.nd_thucdon{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+.thucdon_danhgia{
+    background-color: #fff;
+    width: 330px;
+    height: 820px;
+    position: absolute;
+    z-index: 1;
+    left: -15px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+}
+.thucdon_danhgia div .userstars,
+.thucdon_danhgia div .stars{
+    margin: 30px;
+}
+.thucdon_danhgia div .stars .danhgia{
+    margin: auto;
+}
+.thucdon_danhgia1{
+    background-color:#fff;
+    position: absolute;
+    z-index: 1;
+    left: 305px;
+    width: 815px;
+    height: 59px;
+    text-align: center;
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+.thucdon_danhgia2{
+    background-color:#fff;
+    position: absolute;
+    z-index: 1;
+    right: -15px;
+    width: 46px;
+    height: 820px;
+    border-radius: 0 5px 5px 0;
+}
+
+.thucdon_danhgia3{
+    background-color:#fff;
+    position: absolute;
+    z-index: 1;
+    left: 315px;
+    bottom: 0px;
+    width: 794px;
+    height: 20px;
+    border-top: solid 1px #444;
+}
+
+/* đánh giá thực đơn */
+.userstars p, .stars p{
+    font-size: large;
+    text-align: center;
+}
+div.stars {
+    width: 270px;
+    display: inline-block;
+}
+   
+input.star { display: none; }
+   
+label.star {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all .2s;
+}
+   
+input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+}
+   
+input.star-5:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+}
+   
+input.star-1:checked ~ label.star:before { color: #F62; }
+   
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+   
+label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+}
+ /* khác hàng đánh giá */
+div.userstars {
+    width: 270px;
+    display: inline-block;
+}
+   
+input.userstar { display: none; }
+   
+label.userstar {
+    float: right;
+    padding: 10px;
+    font-size: 36px;
+    color: #444;
+    transition: all .2s;
+}
+   
+input.userstar:checked ~ label.userstar:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+}
+   
+input.userstar-5:checked ~ label.userstar:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+}
+   
+input.userstar-1:checked ~ label.userstar:before { color: #F62; }
+   
+label.userstar:hover { transform: rotate(-15deg) scale(1.3); }
+   
+label.userstar:before {
+    content: '\f006';
+    font-family: FontAwesome;
+}
+
+
+/* css cho footer */
+.footer1{
+    background-color: #352a2a;
+    color: white;
+}
+.footer1 h2{
+    margin: 5px;
+    padding: 8px;
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;   
+}
+.footer1 a{
+    color: white;
+}
+/* .footer1 a:hover{
+    color: ;
+}*/
+.footer1 p{
+    margin: 5px;
+    padding-top: 2px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+       
+}
+.footer1 h2{margin: 5px;
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+/*==========================footer2===========================*/
+.footer2{
+   background-color: #e6e6e6;
+   color: black;
+       
+}
+.footer2 p{
+    margin: 8px;
+    padding: 8px;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+}
+.myframegmap{
+    border: 3px solid #f6f5f0;
+    border-radius: 8px;
+    height: 130px;
+    width: 80%;
+    box-shadow: 0px 0px 3px 3px #e7e4dc;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}

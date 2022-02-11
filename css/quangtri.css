@@ -1,0 +1,44 @@
+/* css cho phần header */
+.headerqt{
+    padding: 0;
+}
+
+.headerqt_text{
+    text-shadow: none;
+    border-radius: none;
+}
+
+.footer2{
+    padding-top: 15px;
+    background-color: #333;
+    color: #9d9d9d;
+    text-shadow: none;
+}
+
+/* css cho phần thêm thực đơn */
+.quanly_thucdon h1{
+    text-align: center;
+}
+/* css cho phần sanh sách thực đơn */
+.icon_delete{
+    color: red;
+}
+.icon_update{
+    color: blue;
+}
+
+.themthucdonlink{
+    display: block;
+    font-size: 20px;
+    text-shadow: none;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #1877F2;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.themthucdonlink span{
+    color: #fff;
+    text-decoration: none;
+}

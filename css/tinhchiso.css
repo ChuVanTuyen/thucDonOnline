@@ -1,0 +1,92 @@
+/* css cho thanh menu */
+.tinhchiso{
+    background-color: #fff;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.tinhchiso_item{
+    border-radius: 4px;
+    border: solid 1px rgb(180, 180, 180);
+    box-shadow: 0px 1px 1px 0px;
+}
+
+.tinhchiso_item a{
+    color: rgb(94, 94, 94);
+}
+
+.nav-pills>li.active>a, 
+.nav-pills>li.active>a:focus, 
+.nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #d9534f;
+}
+
+/* css cho phần form tính toán BMI */
+.BMI_form,
+.Calo_form,
+.TL_form{
+    margin-top: 20px;
+}
+
+.BMI_tieude{
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    background-color: #d9534f;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.BMI_form .submit_btn{
+    display: flex;
+}
+
+.tt_nl-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.BMI_form .submit_btn .submit,
+.tinh_toan, .nhap_lai{
+    font-size: 18px;
+}
+
+/* css cho bài viết */
+.baiviet{
+    font-size: 16px;
+}
+.baiviet span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* css cho phần show kết quả BMI */
+.BMI_ketqua, .BMR_ketqua{
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f0f2f5;
+    padding: 20px;
+    display: none;
+}
+
+.BMI_ketqua p, .BMR_ketqua  p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.BMI_ketqua p:last-child, .BMR_ketqua p:last-child{
+    padding: 10px;
+    border-radius: 2px;
+    border: solid 1px #333;
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+/* css cho phần tính bmr */
+.BMR_form{
+    margin-top: 20px;
+}

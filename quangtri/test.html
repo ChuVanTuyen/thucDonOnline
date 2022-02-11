@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/tinhchiso.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    <title>Document</title>
+</head>
+<body style="background-color: #eff0f1;">
+    <div class="jumbotron header_main-nav">
+        <nav class="navbar navbar-inverse navbar-inverse-color header_main-nav">
+          <div class="container-fluid container-fluid-color">
+            <div class="navbar-header">
+              <a class="navbar-brand navbar-nav-text_color" href="./trangchu.php">ThucDonOnline</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Liên hệ</a></li>
+              <li><a href="#" class="navbar-nav-color">Tải ứng dụng</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="navbar-nav-text_color" href="#">Hỗ trợ</a></li>
+                <li><a href="#">Thông báo</a></li>
+                <li><a href="./dangky.php"><span class="glyphicon glyphicon-user"></span><?php if(isset($_SESSION["username"])){echo $_SESSION["username"];} ?></a></li>
+                <li><a href="./dangxuat.php"><span class="glyphicon glyphicon-log-in"></span> Đăng xuất</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="container text-center header_main">
+          <div>
+            <h1>healthy and balanced</h1>
+            <h4>Hãy sử dụng dịch vụ của ThucDonOnline để có được 1 thực đơn khoa học!</h4>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-inverse navbar-inverse-color">
+        <div class="container-fluid container-fluid-color">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>        
+              <span class="icon-bar"></span>                     
+            </button>
+            <a class="navbar-brand" href="">Logo</a>
+          </div>
+          <div class="collapse navbar-collapse navLogo_bot" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="navLogo_bot Focus"><a href="#">Trang chủ</a></li>
+              <li class="Focus"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tính chỉ số</a></li>
+              <li class="Focus"><a href="#">Xem thực đơn</a></li>
+              <li class="Focus"><a href="#">Ẩm thực Việt</a></li>
+              <li class="Focus"><a href="#">Tin tức</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <form class="navbar-form navbar-left navbar-left__search" action="/action_page.php">
+                <div class="form-group form-group">
+                  <input type="text" class="form-control" placeholder="Search" name="search">
+                </div>
+                <button type="submit" class="btn btn-default">Tìm kiếm</button>
+              </form>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</body>
+</html>
