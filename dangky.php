@@ -70,8 +70,8 @@
                   echo '<center class="alert alert-danger">Tên đăng nhập đã tồn tại!</center>';
                 }
                 if($rows == 0){
-                  $sql = "INSERT INTO user(email, tentk, pwd, hoten, quyen_truy_cap)
-                  VALUES ('$email', '$username', '$password','$name', 0)";
+                  $sql = "INSERT INTO user(email, tentk, pwd, hoten)
+                  VALUES ('$email', '$username', '$password','$name')";
                   mysqli_query($conn,$sql);
                   header('location: index.php');
                 }

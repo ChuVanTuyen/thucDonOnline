@@ -56,7 +56,7 @@
                   if($adnums > 0){
                     $_SESSION["adname"] = $username;
                     $_SESSION["adid"] = $adrows["id"];
-                    header('location: ./quangtri/quangtri.html');
+                    header('location: ./quangtri/danhsachthucdon.php');
                   }
                   echo '<div class="thongbao">Tài khoản hoặc mật khẩu không chính xác!</div>';
                 }

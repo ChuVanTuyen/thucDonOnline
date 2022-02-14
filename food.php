@@ -1,15 +1,18 @@
 
+<?php
 
+
+?>
    <div class="noidungweb">
       <div class="container-fluid">
         <div class="row content">
           <div class="col-sm-3 sidenav">
             <h4>Ẩm thực Việt</h4>
             <ul class="nav nav-pills nav-stacked">
-              <li class="active"><a href="#section1">Đồ uống</a></li>
-              <li><a href="#section2">Đồ ăn vặt</a></li>
-              <li><a href="#section3">Món chính</a></li>
-              <li><a href="#section3">Món tráng miệng</a></li>
+              <li style="background-color: #fff; color: red;"><a href="#section1">Đồ uống</a></li>
+              <li style="background-color: #fff; color: red;"><a href="#section2">Đồ ăn vặt</a></li>
+              <li style="background-color: #fff; color: red;"><a href="#section3">Món chính</a></li>
+              <li style="background-color: #fff; color: red;"><a href="#section3">Món tráng miệng</a></li>
             </ul><br>
           </div>
       
@@ -85,16 +88,6 @@
               <div class="trang">
                 <nav aria-label="Something">
                   <ul class="pagination justify-content-end bg-light" style="margin-left: 290px;">
-                    <li class="page-item"><a class="page-link" href="#" tabindex="-1">&lt;&lt;</a></li>
-                     <li class="page-item"><a class="page-link" href="#" tabindex="-1">&lt;</a></li>
-                     <li class="page-item"><a class="page-link" href="#">1</a></li>
-                     <li class="page-item"><a class="page-link" href="#">2</a></li>
-                     <li class="page-item"><a class="page-link" href="#">3</a></li>
-                     <li class="page-item"><a class="page-link" href="#">4</a></li>
-                     <li class="page-item"><a class="page-link" href="#">...</a></li>
-                     <li class="page-item"><a class="page-link" href="#">10</a></li>
-                     <li class="page-item"><a class="page-link" href="#">&gt;</a></li>
-                     <li class="page-item"><a class="page-link" href="#">&gt;&gt;</a></li>
                   </ul>
                </nav>
               </div>

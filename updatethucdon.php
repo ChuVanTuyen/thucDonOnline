@@ -50,14 +50,8 @@
             <div class="navbar-header">
               <a class="navbar-brand navbar-nav-text_color" href="./trangchu.php">ThucDonOnline</a>
             </div>
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Liên hệ</a></li>
-              <li><a href="#" class="navbar-nav-color">Tải ứng dụng</a></li>
-            </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="navbar-nav-text_color" href="#">Hỗ trợ</a></li>
-                <li><a href="#">Thông báo</a></li>
-                <li><a href="./dangky.php"><span class="glyphicon glyphicon-user"></span><?php if(isset($_SESSION["username"])){echo $_SESSION["username"];} ?></a></li>
+                <li><a href="./updatethucdon.php"><span class="glyphicon glyphicon-user"></span><?php if(isset($_SESSION["username"])){echo $_SESSION["username"];} ?></a></li>
                 <li><a href="./dangxuat.php"><span class="glyphicon glyphicon-log-in"></span> Đăng xuất</a></li>
             </ul>
           </div>
@@ -93,16 +87,6 @@
                   </ul>
                 </li>
               <li class="active"><a href="./updatethucdon.php">Xem thực đơn</a></li>
-              <li><a href="./trangchu.php?page_layout=food">Ẩm thực Việt</a></li>
-              <li><a href="#">Tin tức</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <form class="navbar-form navbar-left navbar-left__search" action="/action_page.php">
-                <div class="form-group form-group">
-                  <input type="text" class="form-control" placeholder="Search" name="search">
-                </div>
-                <button type="submit" class="btn btn-default">Tìm kiếm</button>
-              </form>
             </ul>
           </div>
         </div>
@@ -129,7 +113,7 @@
             <div class="row cangiua">
               <div class="info_bmi col-sm-4">
                 <?php 
-                if($rows["cannang"] != NULL && $rows["cannang"] > 0 && $rows["chieucao"] && $rows["chieucao"]> 0 && $rows["chieucao"] > 0){
+                if($rows["cannang"] != NULL && $rows["cannang"] > 0 && $rows["chieucao"] !=NULL && $rows["chieucao"]> 0 ){
                   $BMI =  $rows["cannang"]/($rows["chieucao"]/100*$rows["chieucao"]/100);
                   $BMI = round($BMI, 1);
                   if($rows["tuoi"] < 17){
@@ -213,7 +197,7 @@
     <!-- Bảng thực đơn đề suất -->
         <div class="thucdon">
           <?php
-          if($rows["cannang"] != NULL && $rows["cannang"] > 0 && $rows["chieucao"] && $rows["chieucao"]> 0 && $rows["chieucao"] > 0 && $rows["tuoi"] !=NULL && $rows["tuoi"] > 0){
+          if($rows["cannang"] != NULL && $rows["cannang"] > 0 && $rows["chieucao"]!=NULL && $rows["chieucao"]> 0 && $rows["tuoi"] !=NULL && $rows["tuoi"] > 0){
             if(!isset($_COOKIE["menu"])){
               $sql1 = "SELECT * FROM menu  WHERE luatuoi='$dt' AND trangthai='$tt' ORDER BY RAND() LIMIT 1";
               $result1 = mysqli_query($conn, $sql1);
@@ -230,6 +214,7 @@
                 $sql1 = "SELECT * FROM menu  WHERE luatuoi='$dt' AND trangthai='$tt' ORDER BY RAND() LIMIT 1";
                 $result1 = mysqli_query($conn, $sql1);
                 $rows1 = mysqli_fetch_array($result1);
+                var_dump($rows1["id"]);
                 $menu_id = $rows1["id"];
                 setcookie("menu", '', time()-60);
                 setcookie("rating", '', time()-60);

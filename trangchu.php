@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+
+    <script src="./js/menu.js"></script>
     <title>Document</title>
 </head>
 <body style="background-color: #eff0f1;">
@@ -33,14 +35,8 @@
             <div class="navbar-header">
               <a class="navbar-brand navbar-nav-text_color" href="./trangchu.php">ThucDonOnline</a>
             </div>
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Liên hệ</a></li>
-              <li><a href="#" class="navbar-nav-color">Tải ứng dụng</a></li>
-            </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="navbar-nav-text_color" href="#">Hỗ trợ</a></li>
-                <li><a href="#">Thông báo</a></li>
-                <li><a href="./dangky.php"><span class="glyphicon glyphicon-user"></span><?php if(isset($_SESSION["username"])){echo $_SESSION["username"];} ?></a></li>
+                <li><a href="./updatethucdon.php"><span class="glyphicon glyphicon-user"></span><?php if(isset($_SESSION["username"])){echo $_SESSION["username"];} ?></a></li>
                 <li><a href="./dangxuat.php"><span class="glyphicon glyphicon-log-in"></span> Đăng xuất</a></li>
             </ul>
           </div>
@@ -52,7 +48,7 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-inverse navbar-inverse-color">
+<nav class="navbar navbar-inverse navbar-inverse-color">
         <div class="container-fluid container-fluid-color">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -66,18 +62,16 @@
           <div class="collapse navbar-collapse navLogo_bot" id="myNavbar">
             <ul class="nav navbar-nav">
               <li class="navLogo_bot"><a href="./trangchu.php">Trang chủ</a></li>
-              <li><a data-toggle="dropdown" href="#">Tính chỉ số</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tính chỉ số <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="Menu">
+                    <li><a href="./trangchu.php?page_layout=tinhBMI">Tính BMI</a></li>
+                    <li><a href="./trangchu.php?page_layout=tinhBMR">Tính BMR</a></li>
+                    <li><a href="./trangchu.php?page_layout=tylemo">Tỷ lệ mỡ cơ thể</a></li>
+                    <li><a href="./trangchu.php?page_layout=tinhcalo">Calo cơ thể cần/ngày</a></li>                     
+                  </ul>
+                </li>
               <li><a href="./updatethucdon.php">Xem thực đơn</a></li>
-              <li><a href="./trangchu.php?page_layout=food">Ẩm thực Việt</a></li>
-              <li><a href="#">Tin tức</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <form class="navbar-form navbar-left navbar-left__search" action="/action_page.php">
-                <div class="form-group form-group">
-                  <input type="text" class="form-control" placeholder="Search" name="search">
-                </div>
-                <button type="submit" class="btn btn-default">Tìm kiếm</button>
-              </form>
             </ul>
           </div>
         </div>

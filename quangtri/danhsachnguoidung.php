@@ -1,12 +1,14 @@
-<!-- <?php 
+
+<?php 
   ob_start();
   session_start();
   include_once '../connect.php';
 
-  if($_SESSION["username"] ==''){
-    header('location: index.php');
+  if($_SESSION["adname"] ==''){
+    header('location: dangxuat.php');
   }
-?> -->
+
+?>
 
 
 <!DOCTYPE html>
@@ -15,9 +17,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -26,6 +25,12 @@
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
     <link rel="stylesheet" href="../fonts/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
     <link rel="stylesheet" href="../css/quangtri.css">
+    <script>
+      function xoaTaiKhoan(){
+        var conf = confirm("Bạn có muốn xóa tài khoản này không?");
+        return conf;
+      }
+    </script>
     <title>Document</title>
 </head>
 <body style="background-color: #eff0f1;">
@@ -49,20 +54,75 @@
       <div class="row content">
         <div class="col-sm-3 sidenav">
           <h4>Danh mục quản trị</h4>
-          <div data-role="controlgroup">
-            <a href="" data-role="button">Quản lý tài khoản</a>
-            <a href="" data-role="button">Quản lý thực đơn</a>
-            <a href="" data-role="button">quản lý danh mục ẩm thực Việt</a>
-            <a href="" data-role="button">quản lý món ăn</a>
+          <div data-role="dm_quantri">
+            <div class="dm_quantri-item"><a href="./danhsachadmin.php">Quản lý tài khoản admin</a></div>
+            <div class="dm_quantri-item"><a href="./danhsachnguoidung.php">Quản lý tài khoản người dùng</a></div>
+            <div class="dm_quantri-item"><a href="./danhsachthucdon.php" >Quản lý thực đơn</a></div>
+            
           </div>
         </div>
       
-        <div class="col-sm-9">
-            
+        <div class="col-sm-9"> 
 
-          
+<?php
+if(isset($_GET["page"])){
+  $page=$_GET["page"];
+}
+else{
+  $page = 1;
+}
+$rowsPerPage = 5;
+$perRow = $page * $rowsPerPage-$rowsPerPage;
 
-        </div>
+$sql = "SELECT * FROM user ORDER BY id ASC LIMIT $perRow,$rowsPerPage";
+$query = mysqli_query($conn, $sql);
+$totalRow=mysqli_num_rows(mysqli_query($conn,"SELECT * FROM user"));
+$totalPages = ceil($totalRow/$rowsPerPage);
+$listPage="";
+for($i = 1; $i<=$totalPages; $i++){
+  if($page==$i){
+    $listPage.='<li class="page-item active"><a class="page-link" href="./danhsachthucdon.php?page='.$i.'">'.$i.'</a></li>';
+  }
+  else{
+    $listPage.='<li class="page-item"><a class="page-link" href="./danhsachthucdon.php?page='.$i.'">'.$i.'</a></li>';
+  }
+}
+
+?>
+<div class="danhsachthucdon">
+    <h1 style="text-align:center;">Danh sách người dùng</h1>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>email</th>
+          <th>Tên tài khoản</th>
+          <th>Xóa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        while ($rows = mysqli_fetch_assoc($query)){?>
+        <tr>
+          <td><?php $id=$rows["id"]; echo $rows["id"]; ?></td>
+          <td><?php echo $rows["email"]; ?></td>
+          <td><?php echo $rows["tentk"]; ?></td>
+          <td><a onClick="return xoaTaiKhoan();" href="./xoatkuser.php?<?php echo "userid=".$id;?>"><i class="fa-solid fa-trash-can icon_delete"></i></a></td>
+        </tr>
+      <?php } ?>
+      </tbody>
+    </table>
+    <div class="trang">
+      <nav aria-label="Something">
+        <ul class="pagination justify-content-end bg-light" style="margin-left: 290px;">
+          <?php
+          echo $listPage;
+          ?>
+        </ul>
+     </nav>
+    </div>
+  </div>
+          </div>
       </div>
     </div>
     

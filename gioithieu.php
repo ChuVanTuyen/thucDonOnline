@@ -53,56 +53,6 @@
 
   </div>
   <br/><br/>
-  <div class="noidungweb_food">
-    <p class="noidungweb_title noidungweb_title--red">Ẩm thực VIỆT NAM</p>
-    <div class="container">    
-      <div class="noidungweb_xemthem"><a href="">Xem thêm</a></div>
-      <div class="row">
-        <div class="col-sm-4">
-          <a href="" class="noidungweb_food-link">
-            <img src="./img/bun-dau-7-e1593236905415-600x423.jpg" class="img-rounded cangiua" alt="Cinque Terre" width="304" height="236">
-            <button class="noidungweb_food-btn">Bún đậu</button> 
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="" class="noidungweb_food-link">
-            <img src="./img/ca-kho-2-600x376.jpg" class="img-rounded cangiua" alt="Cinque Terre" width="304" height="236">
-            <button class="noidungweb_food-btn">Cá kho</button> 
-          </a> 
-        </div>
-        <div class="col-sm-4">
-          <a href="" class="noidungweb_food-link">
-            <img src="./img/V3-BUN-CHA-HA-NOI-600x600.jpg" class="img-rounded cangiua" alt="Cinque Terre" width="304" height="236">
-            <button class="noidungweb_food-btn">Bún chả</button> 
-          </a> 
-        </div>
-      </div>
-    </div><br>
-    
-    <div class="container">    
-      <div class="row">
-        <div class="col-sm-4">
-          <a href="" class="noidungweb_food-link">
-            <img src="./img/vịt-quay-lạng-sơn-6.jpg" class="img-rounded cangiua" alt="Cinque Terre" width="304" height="236">
-            <button class="noidungweb_food-btn">Vịt quay</button>
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="" class="noidungweb_food-link">
-            <img src="./img/thit-kho-tau-5x7.jpg" class="img-rounded cangiua" alt="Cinque Terre" width="304" height="236">
-            <button class="noidungweb_food-btn">Thịt kho tàu</button> 
-          </a> 
-        </div>
-        <div class="col-sm-4">
-          <a href="" class="noidungweb_food-link">
-            <img src="./img/375px-Cơm_Tấm,_Da_Nang,_Vietnam.jpg" class="img-rounded cangiua" alt="Cinque Terre" width="304" height="236">
-            <button class="noidungweb_food-btn">Cơm tấm</button>
-          </a> 
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br>
   
   <div class="noidungweb_slide1">
     <a href="./updatethucdon.php">
@@ -138,75 +88,7 @@
     </a>
   </div>
   <br/><br/>
-  <div class="noidungweb_tintuc">
-    <div class="container">
-      <div class="tintuc_tieude">
-        <h2>Có thể bạn quan tâm</h2>
-        <a href="">Xem thêm</a> 
-      </div>   
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="panel panel-primary">
-            <div class="panel-heading">BLACK FRIDAY DEAL</div>
-            <div class="tintuc_nd">
-              <div class="panel-body" style="width:30%; padding: 0;"><img src="./img/V3-BUN-CHA-HA-NOI-600x600.jpg" class="img-responsive tintuc_nd-img cangiua" style="width:100%" alt="Image"></div>
-              <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="panel panel-primary">
-            <div class="panel-heading">BLACK FRIDAY DEAL</div>
-            <div class="tintuc_nd">
-              <div class="panel-body" style="width:30%; padding: 0;"><img src="./img/V3-BUN-CHA-HA-NOI-600x600.jpg" class="img-responsive tintuc_nd-img cangiua" style="width:100%" alt="Image"></div>
-              <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="panel panel-primary">
-            <div class="panel-heading">BLACK FRIDAY DEAL</div>
-            <div class="tintuc_nd">
-              <div class="panel-body" style="width:30%; padding: 0;"><img src="./img/V3-BUN-CHA-HA-NOI-600x600.jpg" class="img-responsive tintuc_nd-img cangiua" style="width:100%" alt="Image"></div>
-              <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="panel panel-primary">
-            <div class="panel-heading">BLACK FRIDAY DEAL</div>
-            <div class="tintuc_nd">
-              <div class="panel-body" style="width:30%; padding: 0;"><img src="./img/V3-BUN-CHA-HA-NOI-600x600.jpg" class="img-responsive tintuc_nd-img cangiua" style="width:100%" alt="Image"></div>
-              <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="panel panel-primary">
-            <div class="panel-heading">BLACK FRIDAY DEAL</div>
-            <div class="tintuc_nd">
-              <div class="panel-body" style="width:30%; padding: 0;"><img src="./img/V3-BUN-CHA-HA-NOI-600x600.jpg" class="img-responsive tintuc_nd-img cangiua" style="width:100%" alt="Image"></div>
-              <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="panel panel-primary">
-            <div class="panel-heading">BLACK FRIDAY DEAL</div>
-            <div class="tintuc_nd">
-              <div class="panel-body" style="width:30%; padding: 0;"><img src="./img/V3-BUN-CHA-HA-NOI-600x600.jpg" class="img-responsive tintuc_nd-img cangiua" style="width:100%" alt="Image"></div>
-              <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-    </div><br><br>
-  </div>
 
 </div>
   
